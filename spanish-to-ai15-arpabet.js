@@ -310,7 +310,7 @@ const PalabraUtils={
 		// Si no se ha encontrado la sílaba tónica (no hay tilde), se determina en base a las reglas de acentuación
 		if (!encontroTonica) {
 			if (silabas.length ==1)// Monosílabos
-				silabas[0].esTonica = /[aeiou]{2}/.test(silaba[0].texto)?1:0;
+				silabas[0].esTonica = /[aeiou]{2}/.test(silabas[0].texto)?1:0;
 				// Para diferenciar monosílabos con tilde diacrítica. 
 			else { // Polisílabos
 				let letraFinal = palabra[palabra.length - 1];
